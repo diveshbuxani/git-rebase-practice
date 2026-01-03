@@ -36,6 +36,7 @@ function App() {
       </p>
       <p>
         new paragraph in feature-branch-1
+        additional line
       </p>
     </>
   )
