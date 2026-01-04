@@ -45,7 +45,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <p>
-        new paragraph in feature-branch-1
+        new LINE in feature-branch-1
         additional line
       </p>
     </>
