@@ -5,6 +5,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [data, setData] = useState(null);
 
   useEffect(() => {
     if (count !== 0){
@@ -15,8 +16,9 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-      const data = await response.json();
-      console.log(data)
+      const resData = await response.json();
+      console.log(resData)
+      setData(resData);
     }
 
     getData();
@@ -47,6 +49,9 @@ function App() {
       <p>
         new LINE in feature-branch-1
         additional line
+      </p>
+      <p>
+        {data?.title}
       </p>
     </>
   )
